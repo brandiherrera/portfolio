@@ -1,17 +1,14 @@
 * {
     box-sizing: border-box;
+
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+    margin: 30px;
 }
 
-h1,
-h2,
-h3 {
-    
-}
 
 .portfolio,
 .bio,
@@ -20,7 +17,6 @@ h3 {
     padding-right: 10%;
 }
 
-nav, 
 footer {
     background-color: #cccccc;
     padding: 2% 0;
@@ -28,15 +24,24 @@ footer {
 }
 
 nav {
+    background-color: #cccccc;
+    padding-top: 2%;
+    padding-bottom: 2%;
     position: fixed;
+    width: 100%;
     top: 0;
     right: 0;
     left: 0;
+    text-align: right:
 }
 
-nav > .hamburger {
-    display: none;
+nav .hamburger {
+    padding-right: 5%;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: inherit;
 }
+
 header {
     padding: 20% 10%;
 }
@@ -58,21 +63,61 @@ img {
     padding-left: 10%;
     padding-top: 5%;
 }
+
 .portfolio p,
 .portfolio h3 {
     padding-left: 10%;
     padding-right: 10%;
 }
-.portfolio-1 {
-    border: 1px black solid;
-}
-.hamburger {
-    display: flex;
-    position: absolute;
-    right: 0;
-    padding-right: 10%;
+
+a {
+    text-align: center;
 }
 
-.links > .link {
+li {
+    list-style-type: none;
+    display: inline;
     text-align: center;
+    padding-right: 2%;
+}
+
+p {
+    line-height: 25px;
+}
+@media screen and (max-width: 736px) {
+    .portfolio p {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    .link {
+        display: inline-block;
+        justify-content: center;
+        padding-right: 5%;
+    }
+    nav .hamburger {
+        padding-right: 5%;
+        vertical-align: middle;
+        text-align: right;
+        padding-bottom: inherit;
+    }
+
+}
+@media screen and (min-width: 736px) {
+    .hamburger {
+        display: none;
+    }
 }
