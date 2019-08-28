@@ -7,11 +7,19 @@ body {
     margin-top: 30px;
 }
 
-.nav, h1, h2, h3, footer {
+.nav, h1, h2, h3, footer, button {
     font-family: 'Raleway', sans-serif;
 }
 p {
     font-family: 'Roboto', sans-serif;
+}
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: rgba(80, 60, 60, 0.918);
+    font-size: 20px;
 }
 .portfolio,
 .bio,
@@ -41,12 +49,12 @@ nav {
     text-align: right;
 }
 
-nav .hamburger {
+/*nav .hamburger {
     padding-right: 5%;
     vertical-align: middle;
     text-align: right;
     padding-bottom: inherit;
-}
+}*/
 
 header {
     padding: 20% 10%;
@@ -61,7 +69,7 @@ section:nth-child(odd) {
     background-color:#d9d9d9;
 }
 */
-.portfolio-1 img {
+.f1-pic {
     justify-content: center;
     display: flex;
     width: 100%;
@@ -70,16 +78,23 @@ section:nth-child(odd) {
     padding-top: 5%;
 }
 
+.skills img {
+    justify-content: center;
+    height: 30px;
+    padding: 0;
+}
+
 .contact img {
     width: 35px;
     padding-right: 10px;
     display: inline-block;
 }
-.portfolio p,
-.portfolio h3 {
+/*.portfolio p,
+.portfolio h3,
+.portfolio ul {
     padding-left: 10%;
     padding-right: 10%;
-}
+}*/
 
 a {
     text-align: center;
@@ -95,20 +110,32 @@ li {
 p {
     line-height: 25px;
 }
+
+.btn-quiz {
+    background-color: rgb(197, 168, 168);
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px white solid;
+    border-radius: 3px;
+    font-family: 'Roboto Mono', monospace;
+}
+
 @media screen and (max-width: 736px) {
     .portfolio p {
         font-size: 14px;
         line-height: 20px;
     }
 
-    nav li {
+    /*nav li {
         display: none;
-    }
+    }*/
 
     h1,
     h2,
     h3,
-    p {
+    p,
+    a {
         padding-right: 3%;
         padding-left: 3%;
     }
@@ -118,14 +145,25 @@ p {
         justify-content: center;
         padding-right: 5%;
     }
-    nav .hamburger {
+    /*nav .hamburger {
         padding-right: 5%;
         vertical-align: middle;
         text-align: right;
         padding-bottom: inherit;
+    }*/
+    nav {
+        font-size: 16px;
     }
-
+    .hamburger {
+        display: none;
+    }
+    .skills img {
+        justify-content: center;
+        height: 20px;
+        padding: 0;
+    }
 }
+
 @media screen and (min-width: 736px) {
     .hamburger {
         display: none;
