@@ -5,10 +5,12 @@
 body {
     text-align: left;
     margin-top: 30px;
+    color: #4d4d4d;
 }
 
 .nav, h1, h2, h3, footer, button {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lora', serif;
+    
 }
 p {
     font-family: 'Roboto', sans-serif;
@@ -18,8 +20,12 @@ p {
     text-decoration: none;
 }
 .nav a:hover {
-    color: rgba(80, 60, 60, 0.918);
-    font-size: 20px;
+    color: #bfbfbf;
+    text-decoration-line: underline 2px;
+}
+.main {
+    padding-right: 20%;
+    padding-left: 20%;
 }
 .portfolio,
 .bio,
@@ -38,9 +44,7 @@ footer {
 }
 
 nav {
-    background-color: #cccccc;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
@@ -58,8 +62,14 @@ nav {
 
 header {
     padding: 20% 10%;
+    color: black;
 }
+.header {
+    background-image: url("images/iceland-background");
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
 section {
     padding: 5% 0;
     background-color: whitesmoke;
@@ -69,12 +79,12 @@ section:nth-child(odd) {
     background-color:#d9d9d9;
 }
 */
-.f1-pic {
+#portfolio-listing .f1-pic, #portfolio-listing .travel-search-pic {
     justify-content: center;
-    display: flex;
+    /* display: flex; */
     width: 100%;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 0%;
+    padding-left: 0%;
     padding-top: 5%;
 }
 
