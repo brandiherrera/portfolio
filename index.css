@@ -9,11 +9,11 @@ body {
 }
 
 .nav, h1, h2, h3, footer, button {
-    font-family: 'Lora', serif;
-    
+    font-family: 'Lora', serif;  
 }
 p {
     font-family: 'Roboto', sans-serif;
+    line-height: 25px;
 }
 .nav a {
     color: black;
@@ -24,8 +24,8 @@ p {
     text-decoration-line: underline 2px;
 }
 .main {
-    padding-right: 20%;
-    padding-left: 20%;
+    padding-right: 15%;
+    padding-left: 15%;
 }
 .portfolio,
 .bio,
@@ -74,18 +74,13 @@ section {
     padding: 5% 0;
     background-color: whitesmoke;
 }
-/*
-section:nth-child(odd) {
-    background-color:#d9d9d9;
-}
-*/
-#portfolio-listing .f1-pic, #portfolio-listing .travel-search-pic {
+
+#portfolio-listing #listing-pic {
     justify-content: center;
-    /* display: flex; */
     width: 100%;
     padding-right: 0%;
     padding-left: 0%;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .skills img {
@@ -99,12 +94,6 @@ section:nth-child(odd) {
     padding-right: 10px;
     display: inline-block;
 }
-/*.portfolio p,
-.portfolio h3,
-.portfolio ul {
-    padding-left: 10%;
-    padding-right: 10%;
-}*/
 
 a {
     text-align: center;
@@ -117,18 +106,31 @@ li {
     padding-right: 2%;
 }
 
-p {
-    line-height: 25px;
-}
-
-.btn-quiz {
-    background-color: rgb(197, 168, 168);
+#portfolio-listing button {
+    background-color: white;
+    display: inline-block;
     min-width: 100px;
+
     padding-top: 10px;
     padding-bottom: 10px;
     border: 2px white solid;
     border-radius: 3px;
     font-family: 'Roboto Mono', monospace;
+    margin-bottom: 2%;
+}
+#code-buttons {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+/* #code-buttons button {
+    min-width: 100%;
+    border: black 15px,
+} */
+#portfolio-listing {
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 736px) {
