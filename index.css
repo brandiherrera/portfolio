@@ -11,6 +11,9 @@ body {
 .nav, h1, h2, h3, footer, button {
     font-family: 'Lora', serif;  
 }
+h3, h2 {
+    margin: 2% 0;
+}
 p {
     font-family: 'Roboto', sans-serif;
     line-height: 25px;
@@ -20,8 +23,10 @@ p {
     text-decoration: none;
 }
 .nav a:hover {
-    color: #bfbfbf;
-    text-decoration-line: underline 2px;
+    /* color: #bfbfbf; */
+    text-decoration-line: underline;
+    /* text-decoration-color: aqua; */
+    transition: 0.2s;
 }
 .main {
     padding-right: 15%;
@@ -108,19 +113,23 @@ li {
 
 #portfolio-listing button {
     background-color: white;
-    display: inline-block;
     min-width: 100px;
-
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 2px white solid;
     border-radius: 3px;
     font-family: 'Roboto Mono', monospace;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    /* border: 2px white solid; */
+}
+#portfolio-listing button:hover {
+    border: 1px black solid;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
 }
 #code-buttons {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     justify-content: space-evenly;
 }
