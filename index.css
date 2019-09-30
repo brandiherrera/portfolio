@@ -14,16 +14,19 @@ body {
 h3, h2 {
     margin: 2% 0;
 }
+h2 {
+    color: #1a1a1a;
+}
 p {
     font-family: 'Roboto', sans-serif;
     line-height: 25px;
 }
 .nav a {
-    color: black;
+    color: #1a1a1a;
     text-decoration: none;
 }
 .nav a:hover {
-    /* color: #bfbfbf; */
+    color: #1a1a1a;
     text-decoration-line: underline;
     /* text-decoration-color: aqua; */
     transition: 0.2s;
@@ -67,7 +70,7 @@ nav {
 
 header {
     padding: 20% 10%;
-    color: black;
+    color: #1a1a1a;
 }
 .header {
     background-image: url("images/iceland-background");
@@ -122,8 +125,8 @@ li {
     /* border: 2px white solid; */
 }
 #portfolio-listing button:hover {
-    border: 1px black solid;
-    background-color: black;
+    border: 1px #1a1a1a solid;
+    background-color: #1a1a1a;
     color: white;
     transition: 0.5s;
 }
@@ -147,7 +150,24 @@ li {
         font-size: 14px;
         line-height: 20px;
     }
-
+    .main {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    header {
+        padding: 3% 5% 37% 5%;
+        text-align: center;
+        font-size: smaller;
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+    .portfolio,
+    .bio,
+    .contact {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
     /*nav li {
         display: none;
     }*/
