@@ -91,7 +91,7 @@ section {
     padding-top: 10%;
 }
 
-#listing-pic-m {
+/* #listing-pic-m {
     justify-content: center;
     width: 100%;
     padding-right: 0%;
@@ -101,7 +101,7 @@ section {
 
 .landing-page-2 > #listing-pic {
     padding-top: 0;
-}
+} */
 .skills img {
     justify-content: center;
     height: 30px;
