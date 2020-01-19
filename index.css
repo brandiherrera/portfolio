@@ -155,6 +155,11 @@ li {
         font-size: 14px;
         line-height: 20px;
     }
+    #portfolio-listing > #listing-pic, #portfolio-listing > #listing-pic-m {
+        padding-right: 5%;
+        padding-left: 5%;
+        /* width: 90%; */
+    }
     .main {
         padding-right: 3%;
         padding-left: 3%;
