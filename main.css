@@ -323,10 +323,13 @@ li {
     #portfolio-listing button {
         font-size: 1.1em;
         width: 175px;
-        /* padding: 10px 0; */
-        /* border: none; */
-        /* border-radius: 3px; */
-        /* margin-bottom: 1%; */
+        /* display: block; */
+    }
+    #code-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
     }
 }
 
