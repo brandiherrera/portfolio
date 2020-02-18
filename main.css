@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: left;
+    /* margin-top: 30px; */
+    color: #4d4d4d;
+}
+
+.nav, h1, h2, h3, footer, button, h4, .skills  {
+    font-family: 'Quicksand', sans-serif;  
+}
+
+h3, h2 {
+    margin: 2% 0;
+}
+
+h2 {
+    color: #1a1a1a;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 25px;
+}
+
+.nav ul {
+    margin: 10px 0;
+}
+
+.nav a {
+    /* color: #1a1a1a; */
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: #1a1a1a;
+    /* text-decoration-line: underline; */
+    border-bottom: 1px solid black;
+    transition: 0.2s;
+}
+
+.main {
+    padding: 0 5%;
+}
+
+.portfolio,
+.bio,
+.contact {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: .75%;
+}
+
+footer {
+    background-color: #cccccc;
+    padding: 2% 0;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 12px;
+}
+
+nav {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+/*nav .hamburger {
+    padding-right: 5%;
+    vertical-align: middle;
+    text-align: right;
+    padding-bottom: inherit;
+}*/
+
+header {
+    padding: 20% 10%;
+    color: #1a1a1a;
+}
+.header {
+    background-image: url("images/iceland-background");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+section {
+    padding: 5% 0;
+}
+
+#portfolio-listing #listing-pic {
+    justify-content: center;
+    width: 100%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+#listing-pic-m {
+    justify-content: center;
+    width: 100%;
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-top: 0;
+}
+
+.skills img {
+    justify-content: center;
+    height: 30px;
+    padding: 0;
+}
+
+.contact img {
+    width: 35px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+a {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+    padding-right: 2%;
+}
+
+/* #portfolio-listing button {
+    background-color: white;
+    min-width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 1%;
+    border: 2px white solid;
+} */
+
+#portfolio-listing button {
+    background-color: white;
+    /* color: #4d4d4d; */
+    color: #3485E2;
+    font-size: 1.2em;
+    width: 175px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 1%;
+}
+
+/* .fa-angle-double-right {
+    font-size: 1.1em;
+} */
+
+/* #portfolio-listing button:hover {
+    cursor: pointer;
+    border: 1px #1a1a1a solid;
+    background-color: #1a1a1a;
+    color: white;
+    transition: 0.5s;
+} */
+
+#portfolio-listing button:hover {
+    cursor: pointer;
+    /* border: 1px #4d4d4d solid;
+    background-color: #4d4d4d;
+    color: white; */
+    color: #73B6FF;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+/* #code-buttons {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+} */
+
+#code-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+/* #code-buttons button {
+    width: 100px;
+} */
+
+/* .portfolio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#portfolio-listing {
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    /* padding: 3%; */
+    /* width: 50%; */
+}
+
+.listing-info {
+    padding: 0 3%;
+}
+
+#portfolio-listing h3 {
+    text-align: center;
+    color: white;
+    background-color: #B57BA6;
+    margin-top: 0;
+    padding: 1% 0;
+}
+
+#portfolio-listing h4 {
+    text-align: center;
+}
+
+.landing-page-2,
+#code-buttons {
+    /* text-align: center; */
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 3%;
+    width: 100%
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-evenly;
+    /* text-align: center; */
+    margin-bottom: 4%;
+}
+
+.skill-item {
+    display: block;
+    text-align: center;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* align-items: space-between; */
+    padding: 1% 3%;
+    /* width: 15%; */
+}
+
+.skill-item p {
+    margin: 0;
+}
+
+@media screen and (max-width: 736px) {
+    #code-buttons {
+        flex-direction: row;
+    }
+    #portfolio-listing button {
+        /* display: block; */
+        width: 100px;
+    }
+
+    #portfolio-listing > #listing-pic, 
+    #portfolio-listing > #listing-pic-m {
+        padding-right: 5%;
+        padding-left: 5%;
+        /* width: 90%; */
+    }
+    .main {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+    header {
+        padding: 3% 5% 37% 5%;
+        text-align: center;
+        /* font-size: smaller; */
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+    .portfolio,
+    .bio,
+    .contact {
+        padding-left: 0%;
+        padding-right: 0%;
+    } 
+    .link {
+        display: inline-block;
+        justify-content: center;
+        padding-right: 5%;
+    }
+    /*nav .hamburger {
+        padding-right: 5%;
+        vertical-align: middle;
+        text-align: right;
+        padding-bottom: inherit;
+    }*/
+    nav {
+        font-size: 16px;
+    }
+    .hamburger {
+        display: none;
+    }
+    .skills p {
+        font-size: .9em;
+    }
+    .skills img {
+        height: 25px;
+    }
+    #portfolio-listing button {
+        font-size: 1.1em;
+        width: 175px;
+        /* padding: 10px 0; */
+        /* border: none; */
+        /* border-radius: 3px; */
+        /* margin-bottom: 1%; */
+    }
+}
+
+@media screen and (min-width: 736px) {
+    .hamburger {
+        display: none;
+    }
+    /* h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 38px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    nav {
+        font-size: 21px;
+    }
+    .portfolio p {
+        font-size: 18px;
+        line-height: 23px;
+    } */
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: 1.1em;
+        line-height: 1.75em;
+    }
+    nav {
+        font-size: 1.1em;
+    }
+    .portfolio p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .portfolio h4 {
+        font-size: 1.2em;
+    }
+    #portfolio-listing {
+        margin-bottom: 5%;
+    }
+}
