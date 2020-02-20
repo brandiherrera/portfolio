@@ -325,18 +325,8 @@ li {
     margin: 0;
   }
 @media screen and (max-width: 736px) {
-    .header:before {
-        content: "";
-        background: rgba(0, 0, 0, 0) url("images/iceland-background-3.png") no-repeat center center fixed transparent;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-attachment: scroll;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 90vh;
+    .header {
+        background-size: contain;
     }
     #code-buttons {
         flex-direction: row;
