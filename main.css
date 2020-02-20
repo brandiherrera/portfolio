@@ -25,21 +25,17 @@ p {
     line-height: 25px;
 }
 
-/* .nav ul {
-    margin: 10px 0;
-} */
-
 .nav a {
-    /* color: #1a1a1a; */
     color: #4d4d4d;
     text-decoration: none;
 }
 
 nav a:hover {
     cursor: pointer;
-    color: #1a1a1a;
+    /* color: #1a1a1a; */
+    color: #4d4d4d;
     /* text-decoration-line: underline; */
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #4d4d4d;;
     transition: 0.2s;
 }
 
@@ -73,13 +69,17 @@ nav {
     text-align: right;
 }
 
-.nav p {
+.nav p,
+.name {
     font-family: 'Covered By Your Grace', cursive;
+    /* font-family: 'Shadows Into Light', cursive; */
     font-size: 2.2em;
+    line-height: 1.5em;
     position: absolute;
     top: 0;
     left: 0;
     margin: 0;
+    /* margin: 5px 0; */
     padding: 0 2%;
 }
 
@@ -97,7 +97,8 @@ header {
 }
 
 .header {
-    background-image: url("images/iceland-background");
+    /* background-image: url("images/iceland-background"); */
+    background-image: url("images/iceland-background-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -143,12 +144,6 @@ section {
     font-size: 4em;
     margin: 0 5%;
 }
-/* 
-.contact img {
-    width: 35px;
-    padding-right: 5%;
-    display: inline-block;
-} */
 
 a {
     text-align: center;
@@ -160,17 +155,6 @@ li {
     text-align: center;
     padding-right: 2%;
 }
-
-/* #portfolio-listing button {
-    background-color: white;
-    min-width: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 3px;
-    font-family: 'Roboto Mono', monospace;
-    margin-bottom: 1%;
-    border: 2px white solid;
-} */
 
 #portfolio-listing button {
     /* background-color: white; */
@@ -206,29 +190,12 @@ li {
     transition: 0.2s;
 }
 
-/* #code-buttons {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-evenly;
-} */
-
 #code-buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
 }
-
-/* #code-buttons button {
-    width: 100px;
-} */
-
-/* .portfolio-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
 
 .portfolio-container {
     display: flex;
@@ -307,6 +274,40 @@ li {
     height: 50px;
 }
 
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #4d4d4d;;
+    z-index: 1;
+    right: 0;
+    margin: 0 2%;
+}
+
+.hamburger:hover .dropdown {
+    /* cursor: pointer; */
+    display: block;
+}
+
+.dropdown a {
+    /* background-color: aqua; */
+    /* color: #B57BA6; */
+    color: #4D4D4D;
+    font-size: .9em;
+    display: block;
+}
+
+.dropbtn {
+    /* font-size: 16px;   */
+    border: none;
+    outline: none;
+    /* color: white; */
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
 @media screen and (max-width: 736px) {
     #code-buttons {
         flex-direction: row;
@@ -327,12 +328,12 @@ li {
         padding-left: 3%;
     }
     header {
-        padding: 3% 5% 37% 5%;
+        padding: 10% 5% 30% 5%;
         text-align: center;
-        /* font-size: smaller; */
     }
     h1 {
         margin-bottom: 0;
+        font-size: 3em;
     }
     .portfolio,
     .about,
@@ -346,17 +347,20 @@ li {
         justify-content: center;
         padding-right: 5%;
     }
-    /*nav .hamburger {
-        padding-right: 5%;
-        vertical-align: middle;
-        text-align: right;
-        padding-bottom: inherit;
-    }*/
-    nav {
-        font-size: 16px;
+    nav a {
+        display: none;
     }
     .hamburger {
-        display: none;
+        color: black;
+        padding: 0 2%;
+        vertical-align: middle;
+        font-size: 1.5em;
+    }
+    .name {
+        display: inline;
+    }
+    nav {
+        font-size: 16px;
     }
     .skills p {
         font-size: .9em;
@@ -367,7 +371,6 @@ li {
     #portfolio-listing button {
         font-size: 1.1em;
         width: 175px;
-        /* display: block; */
     }
     #code-buttons {
         display: flex;
@@ -393,26 +396,6 @@ li {
     .hamburger {
         display: none;
     }
-    /* h1 {
-        font-size: 48px;
-    }
-    h2 {
-        font-size: 38px;
-    }
-    h3 {
-        font-size: 30px;
-    }
-    p {
-        font-size: 20px;
-        line-height: 27px;
-    }
-    nav {
-        font-size: 21px;
-    }
-    .portfolio p {
-        font-size: 18px;
-        line-height: 23px;
-    } */
     h1 {
         font-size: 3em;
     }
