@@ -41,6 +41,7 @@ nav a:hover {
 
 .main {
     padding: 0 5%;
+    background-color: white;
 }
 
 .portfolio,
@@ -50,6 +51,10 @@ nav a:hover {
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: .75%;
+}
+
+.contact {
+    margin-bottom: 0;
 }
 
 footer {
@@ -115,6 +120,20 @@ header {
     overflow-y: scroll;
 }
 
+body:after{
+    content:"";
+    position:fixed; /* stretch a fixed position to the whole screen */
+    top:0;
+    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
+    z-index:-1; /* needed to keep in the background */
+    background: url("images/iceland-background-3.png") center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 
 section {
