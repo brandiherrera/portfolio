@@ -109,7 +109,7 @@ header {
 
 .header:before {
     content: "";
-    background: rgba(0, 0, 0, 0) url("images/iceland-background-2.jpg") no-repeat center center fixed;
+    background: rgba(0, 0, 0, 0) url("images/iceland-background-2.jpg") no-repeat center center fixed transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
