@@ -113,7 +113,7 @@ header {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: contain;
     background-attachment: scroll;
     top: 0;
     left: 0;
