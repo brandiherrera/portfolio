@@ -97,9 +97,10 @@ header {
 }
 
 .header {
-    /* background-image: url("images/iceland-background"); */
-    background-image: url("images/iceland-background-2.jpg");
-    background-repeat: no-repeat;
+    background: rgba(0, 0, 0, 0) url("images/iceland-background-2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
