@@ -4,7 +4,6 @@
 
 body {
     text-align: left;
-    /* margin-top: 30px; */
     color: #4d4d4d;
 }
 
@@ -61,8 +60,6 @@ footer {
     background-color: #cccccc;
     padding: 1% 0;
     text-align: center;
-    /* padding-left: 10%; */
-    /* font-size: 12px; */
 }
 
 nav {
@@ -77,19 +74,17 @@ nav {
 .nav p,
 .name {
     font-family: 'Covered By Your Grace', cursive;
-    /* font-family: 'Shadows Into Light', cursive; */
     font-size: 2.2em;
     line-height: 1.5em;
     position: absolute;
     top: 0;
     left: 0;
     margin: 0;
-    /* margin: 5px 0; */
     padding: 0 2%;
 }
 
 header {
-    padding: 5% 10% 20% 10%;
+    padding: 10% 10% 20% 10%;
     color: #1a1a1a;
     text-align: center;
 }
@@ -124,7 +119,7 @@ body:after{
     content:"";
     position:fixed; /* stretch a fixed position to the whole screen */
     top:0;
-    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    height:90vh; /* fix for mobile browser address bar appearing disappearing */
     left:0;
     right:0;
     z-index:-1; /* needed to keep in the background */
@@ -339,27 +334,23 @@ li {
     margin: 0;
   }
 @media screen and (max-width: 736px) {
-    /* .header  */
     #code-buttons {
         flex-direction: row;
     }
     #portfolio-listing button {
-        /* display: block; */
         width: 100px;
     }
-
     #portfolio-listing > #listing-pic, 
     #portfolio-listing > #listing-pic-m {
         padding-right: 5%;
         padding-left: 5%;
-        /* width: 90%; */
     }
     .main {
         padding-right: 3%;
         padding-left: 3%;
     }
     header {
-        padding: 10% 5% 30% 5%;
+        padding: 20% 5% 30% 5%;
         text-align: center;
     }
     h1 {
@@ -453,4 +444,36 @@ li {
     #portfolio-listing {
         margin-bottom: 5%;
     }
+}
+
+@media screen and (min-width: 1300px) {
+    .hamburger {
+        display: none;
+    }
+    /* h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: 1.1em;
+        line-height: 1.75em;
+    }
+    nav {
+        font-size: 1.1em;
+    }
+    .portfolio p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .portfolio h4 {
+        font-size: 1.2em;
+    }
+    #portfolio-listing {
+        margin-bottom: 5%;
+    } */
 }
