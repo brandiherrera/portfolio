@@ -8,7 +8,7 @@
     <title>Brandi Herrera | Portfolio</title>
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway|Covered+By+Your+Grace&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Quicksand%7CRaleway%7CCovered+By+Your+Grace&display=swap"
         rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
         integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="nav" role="navigation">
+    <nav class="nav">
         <ul>
             <li class="name">Brandi Herrera</li>
             <li><a href="#about">About</a></li>
@@ -38,12 +38,12 @@
         </ul>
 
     </nav>
-    <header class="header" role="banner">
+    <header class="header">
         <h1>Let's explore new code together!</h1>
     </header>
-    <main class="main" role="main">
+    <main class="main">
 
-        <section class="about" id="about" role="text">
+        <section class="about" id="about">
             <h2>About Me</h2>
             <p>Determined to become a top contributor for my favorite online community, in middle-school I taught myself
                 HTML/CSS so I could create pages and guilds that rivaled the best of them. But, it wasn’t until recent
@@ -54,10 +54,10 @@
             </p>
         </section>
 
-        <section class="m-skills" role="text">
+        <section class="m-skills">
             <h2>Skills</h2>
         </section>
-        <section class="main-skills" id="skills" role="text">
+        <div class="main-skills" id="skills">
             <div class="main-skills-container">
                 <div class="main-skill-item">
                     <img src="https://image.flaticon.com/icons/png/512/732/732212.png" alt="html5 logo" />
@@ -111,28 +111,26 @@
                     <p>GitHub</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="portfolio" id="portfolio" role="text">
+        <section class="portfolio" id="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-container">
-                <div id="portfolio-listing">
+                <div class="portfolio-listing" id="portfolio-listing-5">
                     <h3>MuseMe</h3>
 
                     <div class="listing-info">
-                        <img class="museme-pic" id="listing-pic" src="images/museme-landing-page.png"
+                        <img class="listing-pic" id="museme-pic" src="images/museme-landing-page.png"
                             alt="MuseMe landing page" />
                         <p>This full stack application allows users to view randomized art selected from The
                             Metropolitan Museum of
                             Art Collection in New York City. Users can save art to their own curated gallery and they
                             can comment along with other art aficionados.</p>
-                        <div id="code-buttons">
-                            <a href="https://museum-app-full-stack-capstone-react.brandiherrera.now.sh/"><button
-                                    type="button" class="btn-museum"><b>Live <i
-                                            class="fas fa-angle-right"></i></b></button></a>
-                            <a href="https://github.com/brandiherrera/museum-app-full-stack-capstone-react"><button
-                                    type="button" class="btn-museum"><b>Code <i
-                                            class="fas fa-angle-right"></i></b></button></a>
+                        <div class="code-buttons" id="code-buttons-5">
+                            <a href="https://museum-app-full-stack-capstone-react.brandiherrera.now.sh/"><div class="button" id="btn-museum-live">Live <i
+                                            class="fas fa-angle-right"></i></div></a>
+                            <a href="https://github.com/brandiherrera/museum-app-full-stack-capstone-react"><div class="button" id="btn-museum-code">Code <i
+                                            class="fas fa-angle-right"></i></div></a>
                         </div>
                         <h4>Tech Stack</h4>
                         <div class="skills">
@@ -167,25 +165,24 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div id="portfolio-listing">
+                <div class="portfolio-listing" id="portfolio-listing-4">
                     <h3>My-Brain Tracker</h3>
 
                     <div class="listing-info">
-                        <img class="landing-page-1" id="listing-pic" src="images/migraine-dashboard.png"
+                        <img class="listing-pic" id="migraine-pic" src="images/migraine-dashboard.png"
                             alt="My-Brain Tracker dashboard" />
                         <p>This full stack migraine application allows users to record their migraines along with
                             details of the migraine. Users can view their records over time to find common symptoms and
                             remedies, in addition to their highest occurring statistics. They can also share their
                             findings with healthcare professionals so they may find a suitable treatment moving forward.
                         </p>
-                        <div id="code-buttons">
-                            <a href="https://migraine-app-full-stack-capstone-react.brandiherrera.now.sh/"><button
-                                    type="button" class="btn-migraine"><b>Live <i
-                                            class="fas fa-angle-right"></i></b></button></a>
-                            <a href="https://github.com/brandiherrera/migraine-app-full-stack-capstone-react"><button
-                                    type="button" class="btn-migraine"><b>Code <i
-                                            class="fas fa-angle-right"></i></b></button></a>
+                        <div class="code-buttons" id="code-buttons-4">
+                            <a href="https://migraine-app-full-stack-capstone-react.brandiherrera.now.sh/"><div class="button" id="btn-migraine-live">Live <i
+                                            class="fas fa-angle-right"></i></div></a>
+                            <a href="https://github.com/brandiherrera/migraine-app-full-stack-capstone-react"><div class="button" id="btn-migraine-code">Code <i
+                                            class="fas fa-angle-right"></i></div></a>
                         </div>
                         <h4>Tech Stack</h4>
                         <div class="skills">
@@ -221,24 +218,22 @@
                     </div>
                 </div>
 
-                <div id="portfolio-listing">
+                <div class="portfolio-listing" id="portfolio-listing-3">
                     <h3>Travodex</h3>
 
                     <div class="listing-info">
-                        <img class="travel-search-pic" id="listing-pic" src="images/travodex-result-page.png"
+                        <img class="listing-pic" id="travel-search-pic" src="images/travodex-result-page.png"
                             alt="Travel destination search landing page" />
                         <p>A travel-inspired city search application. Users select a city and are returned travel
                             information including a brief history, trending news headlines, travel-related videos, and a
                             five day forecast. The content is useful for planning
                             travels or learning about different cities around the globe. The app uses four third-party
                             API's including the Wikipedia API, News API, YouTube API, and OpenWeatherMap API.</p>
-                        <div id="code-buttons">
-                            <a href="https://brandiherrera.github.io/travel-destination-search-api-capstone/"><button
-                                    type="button" class="btn-travel"><b>Live <i
-                                            class="fas fa-angle-right"></i></b></button></a>
-                            <a href="https://github.com/brandiherrera/travel-destination-search-api-capstone"><button
-                                    type="button" class="btn-travel"><b>Code <i
-                                            class="fas fa-angle-right"></i></b></button></a>
+                        <div class="code-buttons" id="code-buttons-3">
+                            <a href="https://brandiherrera.github.io/travel-destination-search-api-capstone/"><div class="button" id="btn-travel-live">Live <i
+                                            class="fas fa-angle-right"></i></div></a>
+                            <a href="https://github.com/brandiherrera/travel-destination-search-api-capstone"><div class="button" id="btn-travel-code">Code <i
+                                            class="fas fa-angle-right"></i></div></a>
                         </div>
                         <h4>Tech Stack</h4>
                         <div class="skills">
@@ -264,19 +259,19 @@
                     </div>
                 </div>
 
-                <div id="portfolio-listing">
+                <div class="portfolio-listing" id="portfolio-listing-2">
                     <h3>Noteful</h3>
 
                     <div class="listing-info">
-                        <img class="noteful-pic" id="listing-pic" src="images/noteful.png" alt="Noteful landing page" />
+                        <img class="listing-pic" id="noteful-pic"  src="images/noteful.png" alt="Noteful landing page" />
                         <p>This full stack note-taking application allows users to add and delete notes while keeping
                             them organized in folders. The user can select a folder from the list or they may add a new
                             folder to file their note in.</p>
-                        <div id="code-buttons">
-                            <a href="https://noteful-app.brandiherrera.now.sh/"><button type="button"
-                                    class="btn-noteful"><b>Live <i class="fas fa-angle-right"></i></b></button></a>
-                            <a href="https://github.com/brandiherrera/noteful-app"><button type="button"
-                                    class="btn-noteful"><b>Code <i class="fas fa-angle-right"></i></b></button></a>
+                        <div class="code-buttons" id="code-buttons-2">
+                            <a href="https://noteful-app.brandiherrera.now.sh/"><div class="button"
+                                    id="btn-noteful-live">Live <i class="fas fa-angle-right"></i></div></a>
+                            <a href="https://github.com/brandiherrera/noteful-app"><div class="button"
+                                    id="btn-noteful-code">Code <i class="fas fa-angle-right"></i></div></a>
                         </div>
                         <h4>Tech Stack</h4>
                         <div class="skills">
@@ -313,20 +308,20 @@
                     </div>
                 </div>
 
-                <div id="portfolio-listing">
+                <div class="portfolio-listing" id="portfolio-listing-1">
                     <h3>Formula One Quiz App</h3>
 
                     <div class="listing-info">
-                        <img class="f1-pic" id="listing-pic" src="images/F1-quiz-app.png" alt="F1 quiz app preview" />
+                        <img class="listing-pic" id="f1-pic" src="images/F1-quiz-app.png" alt="F1 quiz app preview" />
                         <p>Formula One (F1) Quiz App is an interactive quiz that tests the user’s
                             knowledge of four of the most renowned F1 drivers. It calculates
                             the user’s score and provides user feedback after each question and upon
                             completion of the quiz. </p>
-                        <div id="code-buttons">
-                            <a href="https://brandiherrera.github.io/quiz-app/"><button type="button"
-                                    class="btn-quiz"><b>Live <i class="fas fa-angle-right"></i></b></button></a>
-                            <a href="https://github.com/brandiherrera/quiz-app"><button type="button"
-                                    class="btn-quiz"><b>Code <i class="fas fa-angle-right"></i></b></button></a>
+                        <div class="code-buttons" id="code-buttons-1">
+                            <a href="https://brandiherrera.github.io/quiz-app/"><div class="button"
+                                    id="btn-quiz-live">Live <i class="fas fa-angle-right"></i></div></a>
+                            <a href="https://github.com/brandiherrera/quiz-app"><div class="button"
+                                    id="btn-quiz-code">Code <i class="fas fa-angle-right"></i></div></a>
                         </div>
                         <h4>Tech Stack</h4>
                         <div class="skills">
@@ -353,17 +348,17 @@
                 </div>
         </section>
 
-        <section class="contact" id="contact" role="text">
+        <section class="contact" id="contact">
             <h2>Contact</h2>
-            <div class="links" role="link">
+            <div class="links">
                 <p><a href="https://github.com/brandiherrera"><i class="fab fa-github"></i></a></p>
-                <p><a href="mailto:bcjherrera@gmail.com?Subject=Portfolio Contact" target="_blank"><i
+                <p><a href="mailto:bcjherrera@gmail.com?Subject=Portfolio%20Contact" target="_blank"><i
                             class="far fa-envelope"></i></a></p>
                 <p><a href="https://www.linkedin.com/in/brandiherrera1"><i class="fab fa-linkedin"></i></a></p>
             </div>
         </section>
     </main>
-    <footer class="footer" role="contentinfo">©2020 Brandi Herrera</footer>
+    <footer class="footer">©2020 Brandi Herrera</footer>
 </body>
 
 </html>

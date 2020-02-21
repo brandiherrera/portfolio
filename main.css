@@ -15,7 +15,7 @@ body {
     display: none;
 }
 
-.nav, h1, h2, h3, footer, button, h4, .skills  {
+.nav, h1, h2, h3, footer, button, h4, .skills, .code-buttons a  {
     font-family: 'Quicksand', sans-serif;  
 }
 
@@ -125,24 +125,15 @@ body:after{
     background-size: cover;
 }
 
-
 section {
     padding: 5% 0;
 }
 
-#portfolio-listing #listing-pic {
+.portfolio-listing .listing-pic {
     justify-content: center;
     width: 100%;
     padding-right: 0%;
     padding-left: 0%;
-}
-
-#listing-pic-m {
-    justify-content: center;
-    width: 100%;
-    padding-right: 0%;
-    padding-left: 0%;
-    padding-top: 0;
 }
 
 .skills img {
@@ -175,7 +166,7 @@ li {
     padding-right: 2%;
 }
 
-#portfolio-listing button {
+.portfolio-listing .button {
     background-color: #3485E2;
     color: white;
     font-size: 1.2em;
@@ -186,17 +177,21 @@ li {
     margin-bottom: 1%;
 }
 
-#portfolio-listing button:hover {
+.portfolio-listing .button:hover {
     cursor: pointer;
     background-color: #1961b3;
     transition: 0.2s;
 }
 
-#code-buttons {
+.code-buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
+}
+
+.code-buttons a {
+    text-decoration: none;
 }
 
 .portfolio-container {
@@ -205,7 +200,7 @@ li {
     flex-wrap: wrap;
 }
 
-#portfolio-listing {
+.portfolio-listing {
     border: 1px solid lightgrey;
     display: flex;
     flex-direction: column;
@@ -216,7 +211,7 @@ li {
     padding: 0 3%;
 }
 
-#portfolio-listing h3 {
+.portfolio-listing h3 {
     text-align: center;
     color: white;
     background-color: #B57BA6;
@@ -224,15 +219,8 @@ li {
     padding: 1% 0;
 }
 
-#portfolio-listing h4 {
+.portfolio-listing h4 {
     text-align: center;
-}
-
-.landing-page-2,
-#code-buttons {
-    border-bottom: 1px solid lightgrey;
-    padding-bottom: 3%;
-    width: 100%
 }
 
 .skills,
@@ -298,14 +286,13 @@ li {
   }
 
 @media screen and (max-width: 736px) {
-    #code-buttons {
+    .code-buttons {
         flex-direction: row;
     }
-    #portfolio-listing button {
+    .portfolio-listing .button {
         width: 100px;
     }
-    #portfolio-listing > #listing-pic, 
-    #portfolio-listing > #listing-pic-m {
+    .portfolio-listing > .listing-pic {
         padding-right: 5%;
         padding-left: 5%;
     }
@@ -355,11 +342,11 @@ li {
     .skills img {
         height: 25px;
     }
-    #portfolio-listing button {
+    .portfolio-listing .button {
         font-size: 1.1em;
         width: 175px;
     }
-    #code-buttons {
+    .code-buttons {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -405,7 +392,7 @@ li {
     .portfolio h4 {
         font-size: 1.2em;
     }
-    #portfolio-listing {
+    .portfolio-listing {
         margin-bottom: 5%;
     }
 }
