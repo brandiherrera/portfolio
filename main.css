@@ -7,9 +7,13 @@ body {
     color: #4d4d4d;
 }
 
-/* body:hover .dropdown {
+.main:hover .dropdown {
     display: none;
-} */
+}
+
+.header:hover .dropdown {
+    display: none;
+}
 
 .nav, h1, h2, h3, footer, button, h4, .skills  {
     font-family: 'Quicksand', sans-serif;  
@@ -36,9 +40,7 @@ p {
 nav a:hover {
     cursor: pointer;
     color: #4d4d4d;
-    /* text-decoration-line: underline; */
     background-color: #E6E6E6;
-    /* border-bottom: 1px solid #4d4d4d;; */
     transition: 0.1s;
 }
 
@@ -108,29 +110,14 @@ header {
     height: 90vh;
 }
 
-/* .header:before {
-    content: "";
-    background: rgba(0, 0, 0, 0) url("images/iceland-background-3.png") no-repeat center center fixed transparent;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90vh;
-    overflow-y: scroll;
-} */
-
 body:after{
     content:"";
-    position:fixed; /* stretch a fixed position to the whole screen */
+    position:fixed; /* stretch fixed to whole screen */
     top:0;
     height:100vh; /* fix for mobile browser address bar appearing disappearing */
     left:0;
     right:0;
-    z-index:-1; /* needed to keep in the background */
+    z-index:-1; /* keep in the background */
     background: url("images/iceland-background-3.png") center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -169,7 +156,6 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 30%;
-    /* justify-content: center; */
 }
 
 .links a {
@@ -190,9 +176,7 @@ li {
 }
 
 #portfolio-listing button {
-    /* background-color: white; */
     background-color: #3485E2;
-    /* color: #3485E2; */
     color: white;
     font-size: 1.2em;
     width: 175px;
@@ -202,24 +186,9 @@ li {
     margin-bottom: 1%;
 }
 
-/* .fa-angle-double-right {
-    font-size: 1.1em;
-} */
-
-/* #portfolio-listing button:hover {
-    cursor: pointer;
-    border: 1px #1a1a1a solid;
-    background-color: #1a1a1a;
-    color: white;
-    transition: 0.5s;
-} */
-
 #portfolio-listing button:hover {
     cursor: pointer;
-    /* color: white; */
-    /* color: #73B6FF; */
     background-color: #1961b3;
-    /* text-decoration: underline; */
     transition: 0.2s;
 }
 
@@ -241,8 +210,6 @@ li {
     display: flex;
     flex-direction: column;
     margin-bottom: 10%;
-    /* padding: 3%; */
-    /* width: 50%; */
 }
 
 .listing-info {
@@ -263,7 +230,6 @@ li {
 
 .landing-page-2,
 #code-buttons {
-    /* text-align: center; */
     border-bottom: 1px solid lightgrey;
     padding-bottom: 3%;
     width: 100%
@@ -276,7 +242,6 @@ li {
     flex-wrap: wrap;
     padding: 0;
     justify-content: space-evenly;
-    /* text-align: center; */
     margin-bottom: 4%;
 }
 
@@ -284,11 +249,7 @@ li {
 .main-skill-item {
     display: block;
     text-align: center;
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-    /* align-items: space-between; */
     padding: 1% 3%;
-    /* width: 15%; */
 }
 
 .skill-item p,
@@ -300,7 +261,6 @@ li {
 .main-skills {
     background-color: #E6E6E6;
     margin: 0 5%;
-    /* border: 1px solid #cccccc; */
 }
 
 .main-skill-item img {
@@ -311,8 +271,6 @@ li {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    /* background-color: white; */
-    /* min-width: 160px; */
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px #4d4d4d;
     z-index: 1;
@@ -321,13 +279,10 @@ li {
 }
 
 .hamburger:hover .dropdown {
-    /* cursor: pointer; */
     display: block;
 }
 
 .dropdown a {
-    /* background-color: aqua; */
-    /* color: #B57BA6; */
     padding: 10%;
     color: #4D4D4D;
     font-size: .9em;
@@ -335,15 +290,13 @@ li {
 }
 
 .dropbtn {
-    /* font-size: 16px;   */
     border: none;
     outline: none;
-    /* color: white; */
-    /* padding: 14px 16px; */
     background-color: inherit;
     font-family: inherit;
     margin: 0;
   }
+
 @media screen and (max-width: 736px) {
     #code-buttons {
         flex-direction: row;
@@ -416,7 +369,6 @@ li {
     .main-skills {
         background-color: #E6E6E6;
         margin: 0;
-        /* border: 1px solid #cccccc; */
     }
     .links {
         display: flex;
