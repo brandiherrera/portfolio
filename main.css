@@ -7,6 +7,10 @@ body {
     color: #4d4d4d;
 }
 
+body:hover .dropdown {
+    display: none;
+}
+
 .nav, h1, h2, h3, footer, button, h4, .skills  {
     font-family: 'Quicksand', sans-serif;  
 }
@@ -27,15 +31,16 @@ p {
 .nav a {
     color: #4d4d4d;
     text-decoration: none;
+    padding: 10%;
 }
 
 nav a:hover {
     cursor: pointer;
-    /* color: #1a1a1a; */
     color: #4d4d4d;
     /* text-decoration-line: underline; */
-    border-bottom: 1px solid #4d4d4d;;
-    transition: 0.2s;
+    background-color: #E6E6E6;
+    /* border-bottom: 1px solid #4d4d4d;; */
+    transition: 0.1s;
 }
 
 .main {
@@ -46,10 +51,14 @@ nav a:hover {
 .portfolio,
 .about,
 .contact,
-.main-skills {
+.main-skills{
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: .75%;
+}
+
+.m-skills {
+    padding: 0 5%;
 }
 
 .contact {
@@ -303,8 +312,10 @@ li {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px #4d4d4d;;
+    /* background-color: white; */
+    /* min-width: 160px; */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px #4d4d4d;
     z-index: 1;
     right: 0;
     margin: 0 2%;
@@ -360,7 +371,8 @@ li {
     .portfolio,
     .about,
     .contact,
-    .main-skills {
+    .main-skills,
+    .m-skills {
         padding-left: 0%;
         padding-right: 0%;
     } 
@@ -450,30 +462,8 @@ li {
     .hamburger {
         display: none;
     }
-    /* h1 {
-        font-size: 3em;
+    .main {
+        padding: 0 15%;
+        background-color: white;
     }
-    h2 {
-        font-size: 2em;
-    }
-    h3 {
-        font-size: 1.4em;
-    }
-    p {
-        font-size: 1.1em;
-        line-height: 1.75em;
-    }
-    nav {
-        font-size: 1.1em;
-    }
-    .portfolio p {
-        font-size: 1.1em;
-        line-height: 1.5em;
-    }
-    .portfolio h4 {
-        font-size: 1.2em;
-    }
-    #portfolio-listing {
-        margin-bottom: 5%;
-    } */
 }
