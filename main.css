@@ -188,10 +188,15 @@ li {
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 3%;
+    width: 100%
 }
 
 .code-buttons a {
     text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .portfolio-container {
