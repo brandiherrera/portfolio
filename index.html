@@ -40,30 +40,38 @@
 <body>
     <nav class="nav">
         <ul>
-            <li class="name">Brandi Herrera</li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="hamburger">
+            <li class="name show-web-only">Brandi Herrera</li>
+            <li class="show-web-only"><a href="#about">About</a></li>
+            <li class="show-web-only"><a href="#skills">Skills</a></li>
+            <li class="show-web-only"><a href="#projects">Projects</a></li>
+            <li class="show-web-only"><a href="#contact">Contact</a></li>
+            <li class="hamburger show-web-only">
                 <button class="dropbtn">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="dropdown">
                     <a href="#about">About</a>
                     <a href="#skills">Skills</a>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
             </li>
         </ul>
-
     </nav>
-    <header class="header show-web-only">
-        <h1>Let's explore new code together!</h1>
+
+    <header class="header">
+        <h1 class="show-web-only">Let's explore new code together!</h1>
+        <div class="header-2">
+        <div class="name show-print-only">Brandi Herrera</div>
+        <div class="right-header show-print-only">
+            <p><i class="fas fa-link"></i> brandiherrera.github.io/portfolio/</p>
+            <p><i class="fab fa-github"></i> github.com/brandiherrera</p>
+            <p><i class="far fa-envelope"></i> bcjherrera@gmail.com</p>
+            <p><i class="fab fa-linkedin"></i> linkedin.com/in/brandiherrera1</p>
+        </div>
+    </div>
     </header>
     <main class="main">
-
         <section class="about" id="about">
             <h2>About Me</h2>
             <p>Determined to become a top contributor for my favorite online community, in middle-school I taught myself
@@ -135,7 +143,7 @@
         </div>
 
         <section class="portfolio" id="portfolio">
-            <h2>Portfolio</h2>
+            <h2>Projects</h2>
             <div class="portfolio-container">
                 <div class="portfolio-listing" id="portfolio-listing-5">
                     <h3>MuseMe</h3>
@@ -143,45 +151,47 @@
                     <div class="listing-info">
                         <img class="listing-pic" id="museme-pic" src="images/museme-landing-page.png"
                             alt="MuseMe landing page" />
-                        <p>This full stack application allows users to view randomized art selected from The
+                        <p class="desc">This full stack application allows users to view randomized art selected from The
                             Metropolitan Museum of
                             Art Collection in New York City. Users can save art to their own curated gallery and they
                             can comment along with other art aficionados.</p>
                         <div class="code-buttons" id="code-buttons-5">
                             <a href="https://museum-app-full-stack-capstone-react.brandiherrera.now.sh/">
-                                <div class="button" id="btn-museum-live">Live <i class="fas fa-angle-right"></i></div>
+                                <div class="button show-web-only" id="btn-museum-live">Live <i class="fas fa-angle-right"></i></div>
                             </a>
+                            <p class="code-link show-print-only">https://museum-app-full-stack-capstone-react.brandiherrera.now.sh/</p>
                             <a href="https://github.com/brandiherrera/museum-app-full-stack-capstone-react">
-                                <div class="button" id="btn-museum-code">Code <i class="fas fa-angle-right"></i></div>
+                                <div class="button show-web-only" id="btn-museum-code">Code <i class="fas fa-angle-right"></i></div>
                             </a>
+                            <p class="code-link show-print-only">https://github.com/brandiherrera/museum-app-full-stack-capstone-react</p>
                         </div>
-                        <h4>Tech Stack</h4>
+                        <h4 class="show-web-only">Tech Stack</h4>
                         <div class="skills">
                             <div class="skill-item">
-                                <img src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
+                                <img class="show-web-only" src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
                                 <p>HTML5</p>
                             </div>
                             <div class="skill-item">
-                                <img src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
+                                <img class="show-web-only" src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
                                 <p>CSS3</p>
                             </div>
                             <div class="skill-item">
-                                <img src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
+                                <img class="show-web-only" src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
                                     alt="javascript logo" />
                                 <p>JavaScript</p>
                             </div>
                             <div class="skill-item">
-                                <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-512.png"
+                                <img class="show-web-only" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-512.png"
                                     alt="react logo" />
                                 <p>React</p>
                             </div>
                             <div class="skill-item">
-                                <img src="https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png"
+                                <img class="show-web-only" src="https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png"
                                     alt="node logo" />
                                 <p>Node</p>
                             </div>
                             <div class="skill-item">
-                                <img src="https://cdn.iconscout.com/icon/free/png-512/postgresql-11-1175122.png"
+                                <img class="show-web-only" src="https://cdn.iconscout.com/icon/free/png-512/postgresql-11-1175122.png"
                                     alt="postgresql logo" />
                                 <p>PostgreSQL</p>
                             </div>
@@ -196,46 +206,46 @@
                 <div class="listing-info">
                     <img class="listing-pic" id="migraine-pic" src="images/migraine-dashboard.png"
                         alt="My-Brain Tracker dashboard" />
-                    <p>This full stack migraine application allows users to record their migraines along with
+                    <p class="desc">This full stack migraine application allows users to record their migraines along with
                         details of the migraine. Users can view their records over time to find common symptoms and
                         remedies, in addition to their highest occurring statistics. They can also share their
                         findings with healthcare professionals so they may find a suitable treatment moving forward.
                     </p>
                     <div class="code-buttons" id="code-buttons-4">
                         <a href="https://migraine-app-full-stack-capstone-react.brandiherrera.now.sh/">
-                            <div class="button" id="btn-migraine-live">Live <i class="fas fa-angle-right"></i></div>
+                            <div class="button show-web-only" id="btn-migraine-live">Live <i class="fas fa-angle-right"></i></div>
                         </a>
                         <a href="https://github.com/brandiherrera/migraine-app-full-stack-capstone-react">
-                            <div class="button" id="btn-migraine-code">Code <i class="fas fa-angle-right"></i></div>
+                            <div class="button show-web-only" id="btn-migraine-code">Code <i class="fas fa-angle-right"></i></div>
                         </a>
                     </div>
-                    <h4>Tech Stack</h4>
+                    <h4 class="show-web-only">Tech Stack</h4>
                     <div class="skills">
                         <div class="skill-item">
-                            <img src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
+                            <img class="show-web-only" src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
                             <p>HTML5</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
+                            <img class="show-web-only" src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
                             <p>CSS3</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
+                            <img class="show-web-only" src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
                                 alt="javascript logo" />
                             <p>JavaScript</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-512.png"
+                            <img class="show-web-only" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-512.png"
                                 alt="react logo" />
                             <p>React</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png"
+                            <img class="show-web-only" src="https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png"
                                 alt="node logo" />
                             <p>Node</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.iconscout.com/icon/free/png-512/postgresql-11-1175122.png"
+                            <img class="show-web-only" src="https://cdn.iconscout.com/icon/free/png-512/postgresql-11-1175122.png"
                                 alt="postgresql logo" />
                             <p>PostgreSQL</p>
                         </div>
@@ -249,36 +259,36 @@
                 <div class="listing-info">
                     <img class="listing-pic" id="travel-search-pic" src="images/travodex-result-page.png"
                         alt="Travel destination search landing page" />
-                    <p>A travel-inspired city search application. Users select a city and are returned travel
+                    <p class="desc">A travel-inspired city search application. Users select a city and are returned travel
                         information including a brief history, trending news headlines, travel-related videos, and a
                         five day forecast. The content is useful for planning
                         travels or learning about different cities around the globe. The app uses four third-party
                         API's including the Wikipedia API, News API, YouTube API, and OpenWeatherMap API.</p>
                     <div class="code-buttons" id="code-buttons-3">
                         <a href="https://brandiherrera.github.io/travel-destination-search-api-capstone/">
-                            <div class="button" id="btn-travel-live">Live <i class="fas fa-angle-right"></i></div>
+                            <div class="button show-web-only" id="btn-travel-live">Live <i class="fas fa-angle-right"></i></div>
                         </a>
                         <a href="https://github.com/brandiherrera/travel-destination-search-api-capstone">
-                            <div class="button" id="btn-travel-code">Code <i class="fas fa-angle-right"></i></div>
+                            <div class="button show-web-only" id="btn-travel-code">Code <i class="fas fa-angle-right"></i></div>
                         </a>
                     </div>
-                    <h4>Tech Stack</h4>
+                    <h4 class="show-web-only">Tech Stack</h4>
                     <div class="skills">
                         <div class="skill-item">
-                            <img src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
+                            <img class="show-web-only" src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
                             <p>HTML5</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
+                            <img class="show-web-only" src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
                             <p>CSS3</p>
                         </div>
                         <div class="skill-item"><img
-                                src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/jquery-512.png"
-                                alt="jquery logo" />
+                            class="show-web-only" src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/jquery-512.png"
+                            alt="jquery logo" />
                             <p>jQuery</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
+                            <img class="show-web-only" src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
                                 alt="javascript logo" />
                             <p>JavaScript</p>
                         </div>
@@ -291,44 +301,44 @@
 
                 <div class="listing-info">
                     <img class="listing-pic" id="noteful-pic" src="images/noteful.png" alt="Noteful landing page" />
-                    <p>This full stack note-taking application allows users to add and delete notes while keeping
+                    <p class="desc">This full stack note-taking application allows users to add and delete notes while keeping
                         them organized in folders. The user can select a folder from the list or they may add a new
                         folder to file their note in.</p>
                     <div class="code-buttons" id="code-buttons-2">
                         <a href="https://noteful-app.brandiherrera.now.sh/">
-                            <div class="button" id="btn-noteful-live">Live <i class="fas fa-angle-right"></i></div>
+                            <div class="button show-web-only" id="btn-noteful-live">Live <i class="fas fa-angle-right"></i></div>
                         </a>
                         <a href="https://github.com/brandiherrera/noteful-app">
-                            <div class="button" id="btn-noteful-code">Code <i class="fas fa-angle-right"></i></div>
+                            <div class="button show-web-only" id="btn-noteful-code">Code <i class="fas fa-angle-right"></i></div>
                         </a>
                     </div>
-                    <h4>Tech Stack</h4>
+                    <h4 class="show-web-only">Tech Stack</h4>
                     <div class="skills">
                         <div class="skill-item">
-                            <img src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
+                            <img class="show-web-only" src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
                             <p>HTML5</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
+                            <img class="show-web-only" src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
                             <p>CSS3</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
+                            <img class="show-web-only" src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
                                 alt="javascript logo" />
                             <p>JavaScript</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-512.png"
+                            <img class="show-web-only" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-512.png"
                                 alt="react logo" />
                             <p>React</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png"
+                            <img class="show-web-only" src="https://cdn4.iconfinder.com/data/icons/logos-3/456/nodejs-new-pantone-black-512.png"
                                 alt="node logo" />
                             <p>Node</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.iconscout.com/icon/free/png-512/postgresql-11-1175122.png"
+                            <img class="show-web-only" src="https://cdn.iconscout.com/icon/free/png-512/postgresql-11-1175122.png"
                                 alt="postgresql logo" />
                             <p>PostgreSQL</p>
                         </div>
@@ -342,35 +352,35 @@
 
                 <div class="listing-info">
                     <img class="listing-pic" id="f1-pic" src="images/F1-quiz-app.png" alt="F1 quiz app preview" />
-                    <p>Formula One (F1) Quiz App is an interactive quiz that tests the user’s
+                    <p class="desc">Formula One (F1) Quiz App is an interactive quiz that tests the user’s
                         knowledge of four of the most renowned F1 drivers. It calculates
                         the user’s score and provides user feedback after each question and upon
                         completion of the quiz. </p>
                     <div class="code-buttons" id="code-buttons-1">
                         <a href="https://brandiherrera.github.io/quiz-app/">
-                            <div class="button" id="btn-quiz-live">Live <i class="fas fa-angle-right"></i></div>
+                            <div class="button show-web-only" id="btn-quiz-live">Live <i class="fas fa-angle-right"></i></div>
                         </a>
                         <a href="https://github.com/brandiherrera/quiz-app">
-                            <div class="button" id="btn-quiz-code">Code <i class="fas fa-angle-right"></i></div>
+                            <div class="button show-web-only" id="btn-quiz-code">Code <i class="fas fa-angle-right"></i></div>
                         </a>
                     </div>
-                    <h4>Tech Stack</h4>
+                    <h4 class="show-web-only">Tech Stack</h4>
                     <div class="skills">
                         <div class="skill-item">
-                            <img src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
+                            <img class="show-web-only" src="https://image.flaticon.com/icons/svg/25/25252.svg" alt="html5 logo" />
                             <p>HTML5</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
+                            <img class="show-web-only" src="https://image.flaticon.com/icons/svg/732/732007.svg" alt="css3 logo" />
                             <p>CSS3</p>
                         </div>
                         <div class="skill-item"><img
-                                src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/jquery-512.png"
-                                alt="jquery logo" />
+                            class="show-web-only" src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/jquery-512.png"
+                            alt="jquery logo" />
                             <p>jQuery</p>
                         </div>
                         <div class="skill-item">
-                            <img src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
+                            <img class="show-web-only" src="https://cdn.iconscout.com/icon/free/png-512/javascript-19-555546.png"
                                 alt="javascript logo" />
                             <p>JavaScript</p>
                         </div>
@@ -379,7 +389,7 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="contact show-web-only" id="contact">
             <h2>Contact</h2>
             <div class="links">
                 <p><a href="https://github.com/brandiherrera"><i class="fab fa-github"></i></a></p>
